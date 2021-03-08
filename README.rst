@@ -10,16 +10,11 @@ codename: Shadesmar
 
 :License: MIT
 
-+---------------------------------------------------------------+-------------------------------------------------------------+
-| ::                                                            |                                                             |
-|                                                               |                                                             |
-|   The |biohazard| symbol must be used on containers used to   |   The |biohazard| symbol must be used on containers used to |
-|   dispose of medical waste.                                   |   dispose of medical waste.                                 |
-|                                                               |                                                             |
-|   .. |biohazard| image:: biohazard.png                        |   .. |biohazard| image:: bootstrap.svg                      |
-|      :align: middle                                           |      :align: middle                                         |
-|      :width: 12                                               |      :width: 12                                             |
-+---------------------------------------------------------------+-------------------------------------------------------------+
+
+For instance:
+
+.. image:: bootstrap.svg
+   :width: 40pt
 
 
 Basic Commands
