@@ -10,9 +10,8 @@ codename: Shadesmar
 
 :License: MIT
 
-.. raw:: html
-
-    <object data="static/images/dcim.svg" type="image/svg+xml"></object>
+.. image:: "static/images/dcim.svg"
+   :width: 40pt
 
 
 Basic Commands
