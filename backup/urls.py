@@ -4,7 +4,7 @@ from rest_framework import renderers
 from rest_framework.routers import DefaultRouter
 
 from backup import views
-from backup.views import BackupViewSet, UserViewSet, api_root
+from backup.views import BackupViewSet, UserViewSet, api_root, DeleteViewSet
 
 
 # Create a router and register our viewsets with it.
@@ -14,4 +14,5 @@ router.register(r'users', views.UserViewSet)
 
 urlpatterns = [
     path('', include(router.urls)),
+    path('delete/', views.DeleteViewSet.as_view()),
 ]

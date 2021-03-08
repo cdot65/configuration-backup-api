@@ -4,11 +4,13 @@ from backup.models import Backup
 from backup.serializers import BackupSerializer, UserSerializer
 from backup.permissions import IsOwnerOrReadOnly
 
-from rest_framework import generics, permissions, renderers, viewsets
+from rest_framework import generics, permissions, renderers, viewsets, status
 
 from rest_framework.decorators import api_view, action
 from rest_framework.response import Response
 from rest_framework.reverse import reverse
+from rest_framework.views import APIView
+
 
 
 @api_view(['GET'])
@@ -46,3 +48,8 @@ class UserViewSet(viewsets.ReadOnlyModelViewSet):
     """
     queryset = User.objects.all()
     serializer_class = UserSerializer
+
+class DeleteViewSet(APIView):
+    def delete(self, request, format=None):
+        snippets = Backup.objects.all().delete()
+        return Response(status=status.HTTP_204_NO_CONTENT)
