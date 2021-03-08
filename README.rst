@@ -13,7 +13,7 @@ codename: Shadesmar
 
 For instance:
 
-.. image:: bootstrap.svg
+.. image:: acorn.svg
    :width: 40pt
 
 
