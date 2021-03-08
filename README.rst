@@ -11,10 +11,8 @@ codename: Shadesmar
 :License: MIT
 
 
-For instance:
-
 .. image:: acorn.svg
-   :width: 40pt
+   :width: 200pt
 
 
 Basic Commands
