@@ -1,7 +1,7 @@
 Data Center Inventory Management
 ================================
 
-.. image:: acorn.svg
+.. image:: pinecone.svg
 
 codename: Shadesmar
 
