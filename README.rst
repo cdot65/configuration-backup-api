@@ -1,7 +1,7 @@
-DRF Example Network Inventory
-=============================
+Data Center Inventory Management
+================================
 
-codename: DRF Example Network Inventory
+codename: Shadesmar
 
 .. image:: https://img.shields.io/badge/code%20style-black-000000.svg
      :target: https://github.com/ambv/black
@@ -9,6 +9,10 @@ codename: DRF Example Network Inventory
 
 
 :License: MIT
+
+.. raw:: html
+
+    <object data="static/images/dcim.svg" type="image/svg+xml"></object>
 
 
 Basic Commands
