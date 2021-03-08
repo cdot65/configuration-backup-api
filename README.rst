@@ -1,6 +1,9 @@
 Data Center Inventory Management
 ================================
 
+.. image:: acorn.svg
+   :width: 200pt
+
 codename: Shadesmar
 
 .. image:: https://img.shields.io/badge/code%20style-black-000000.svg
@@ -9,10 +12,6 @@ codename: Shadesmar
 
 
 :License: MIT
-
-
-.. image:: acorn.svg
-   :width: 200pt
 
 
 Basic Commands
