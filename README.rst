@@ -10,7 +10,7 @@ codename: Shadesmar
 
 :License: MIT
 
-.. image:: "static/images/dcim.svg"
+.. image:: static/images/dcim.svg
    :width: 40pt
 
 
