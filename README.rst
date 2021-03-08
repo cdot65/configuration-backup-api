@@ -1,5 +1,5 @@
-Data Center Inventory Management
-================================
+Pinecone Configuration Backup API
+=================================
 
 .. image:: pinecone.svg
 
