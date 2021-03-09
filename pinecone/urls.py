@@ -20,6 +20,7 @@ from rest_framework.authtoken import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('backup.urls')),
+    path('golden/', include('golden.urls')),
 ]
 
 urlpatterns += [

@@ -33,7 +33,7 @@ SECRET_KEY = env("DJANGO_SECRET_KEY")
 
 # ALLOWED HOSTS
 # ------------------------------------------------------------------------------
-ALLOWED_HOSTS = ['api-pinecone', 'api-pinecone.dmz.home', 'packetferret.net']
+ALLOWED_HOSTS = ["dev-pinecone", "dev-pinecone.dmz.home", "packetferret.net"]
 
 
 # APPS
@@ -55,6 +55,7 @@ THIRD_PARTY_APPS = [
 
 LOCAL_APPS =[
     'backup.apps.BackupConfig',
+    'golden.apps.GoldenConfig',
 ]
 
 INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + LOCAL_APPS
