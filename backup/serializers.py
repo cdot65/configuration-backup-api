@@ -9,8 +9,8 @@ class BackupSerializer(serializers.HyperlinkedModelSerializer):
 
     class Meta:
         model = Backup
-        fields = ['url', 'id', 'highlight', 'owner',
-                  'hostname', 'config', 'linenos', 'language', 'style']
+        fields = ['url', 'id', 'highlight', 'owner', 'hostname', 'linenos', 
+                  'config_json', 'config_text', 'config_set', 'language', 'style']
 
 
 class UserSerializer(serializers.HyperlinkedModelSerializer):

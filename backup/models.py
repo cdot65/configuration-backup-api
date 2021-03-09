@@ -13,7 +13,9 @@ STYLE_CHOICES = sorted([(item, item) for item in get_all_styles()])
 class Backup(models.Model):
     created = models.DateTimeField(auto_now_add=True)
     hostname = models.CharField(max_length=100, blank=True, default='')
-    config = models.TextField()
+    config_json = models.TextField(blank=True)
+    config_text = models.TextField(blank=True)
+    config_set = models.TextField(blank=True)
     linenos = models.BooleanField(default=False)
     language = models.CharField(choices=LANGUAGE_CHOICES, default='python', max_length=100)
     style = models.CharField(choices=STYLE_CHOICES, default='friendly', max_length=100)
@@ -26,12 +28,12 @@ class Backup(models.Model):
     def save(self, *args, **kwargs):
         """
         Use the `pygments` library to create a highlighted HTML
-        representation of the config backup.
+        representation of the config_json backup.
         """
         lexer = get_lexer_by_name(self.language)
         linenos = 'table' if self.linenos else False
         options = {'hostname': self.hostname} if self.hostname else {}
         formatter = HtmlFormatter(style=self.style, linenos=linenos,
                                 full=True, **options)
-        self.highlighted = highlight(self.config, lexer, formatter)
+        self.highlighted = highlight(self.config_json, lexer, formatter)
         super(Backup, self).save(*args, **kwargs)
