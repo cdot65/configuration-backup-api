@@ -22,7 +22,7 @@ The following details how to deploy this application.
 Docker Deployment
 ^^^^^^^^^^^^^^^^^
 
-Docker is available for local deployment, it is not currently setup for a production environment. Please let me know if you'd be interested in such a concept, or just stick with a standard Django install found above.
+Docker is available for local deployment, it is not currently setup for a production environment. Please let me know if you'd be interested in such a concept, or just stick with a standard Django install found below.
 
 * Run the web application::
 
@@ -48,21 +48,7 @@ Docker is available for local deployment, it is not currently setup for a produc
 Local Deployment
 ^^^^^^^^^^^^^^^^
 
-* To build the database changes::
-
-    $ python manage.py makemigrations
-
-* Apply the database changes::
-
-    $ python manage.py migrate
-
-* Create a superuser::
-
-    $ python manage.py createsuperuser
-
-* Run the web server::
-
-    $ python manage.py runserver 0.0.0.0:8000
+Follow this excellent guide here: https://www.digitalocean.com/community/tutorials/how-to-set-up-django-with-postgres-nginx-and-gunicorn-on-ubuntu-20-04
 
 
 Basic Commands
