@@ -33,7 +33,7 @@ SECRET_KEY = env("DJANGO_SECRET_KEY")
 
 # ALLOWED HOSTS
 # ------------------------------------------------------------------------------
-ALLOWED_HOSTS = ['api-pinecone', 'api-pinecone.dmz.home', 'packetferret.net']
+ALLOWED_HOSTS = ['0.0.0.0', 'localhost', 'pinecone']
 
 
 # APPS
@@ -93,17 +93,15 @@ WSGI_APPLICATION = 'pinecone.wsgi.application'
 # DATABASES
 # ------------------------------------------------------------------------------
 DATABASES = {
-    "default": env.db(
-        "DATABASE_URL",
-        default="postgres:///pinecone",
-    )
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'postgres',
+        'USER': 'postgres',
+        'PASSWORD': 'postgres',
+        'HOST': 'db',
+        'PORT': 5432,
+    }
 }
-
-DATABASES["default"] = env.db("DATABASE_URL")  # noqa: F405
-DATABASES["default"]["ATOMIC_REQUESTS"] = True  # noqa: F405
-DATABASES["default"]["CONN_MAX_AGE"] = env.int(  # noqa: F405
-    "CONN_MAX_AGE", default=60
-)
 
 
 
