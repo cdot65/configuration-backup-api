@@ -33,7 +33,7 @@ SECRET_KEY = env("DJANGO_SECRET_KEY")
 
 # ALLOWED HOSTS
 # ------------------------------------------------------------------------------
-ALLOWED_HOSTS = ['0.0.0.0', 'localhost', 'pinecone']
+ALLOWED_HOSTS = ['0.0.0.0', 'localhost', 'pinecone', 'python.dmz.home']
 
 
 # APPS
